@@ -10757,6 +10757,11 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+typeface-lobster@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-lobster/-/typeface-lobster-1.1.13.tgz#3775220d1264f2b368fe4d3147bf188fd7080967"
+  integrity sha512-Cxc0ani8UUcQPgpWVUdgmNJBqZGGUw4OOx5TOljl7oiOq40L3f8fiOFDmFxayYvIaJ7uqNFVOhdxeCt0ncmjtg==
+
 uglify-js@^3.1.4:
   version "3.15.3"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.3.tgz#9aa82ca22419ba4c0137642ba0df800cb06e0471"
