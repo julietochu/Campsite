@@ -56,14 +56,14 @@ class Contact extends Component {
                     <div className="col-sm-4">
                         <h5>Our Address</h5>
                         <address>
-                            1 Nucamp Way<br />
-                            Seattle, WA 98001<br />
+                            1 Camp Way<br />
+                            Seattle, WA 1233<br />
                             U.S.A.
                         </address>
                     </div>
                     <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-678-1234</a><br />
+                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@camp.co</a>
                     </div>
                 </div>
                 <div className="row row-content">
@@ -209,7 +209,7 @@ class Contact extends Component {
                             </Row>
                             <Row className="form-group">
                                 <Col md={{ size: 10, offset: 2 }}>
-                                    <Button type="submit" color="primary">
+                                    <Button type="submit" color="success">
                                         Send Feedback
                                     </Button>
                                 </Col>

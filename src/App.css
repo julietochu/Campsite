@@ -12,7 +12,7 @@ h1, h2, h3, .card-body>.card-title {
 }
 
 h2 {
-  color: #3046C5;
+  color: #17dd42;
 }
 
 .card-img-overlay .card-title {
@@ -27,22 +27,24 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
+  background-image: linear-gradient(#70a00e, #18a46a);
   padding: 20px 0;
+  color: 'white';
 }
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+  background-image: linear-gradient(to right, #074e0f, #70a00e, #18a46a);
   color: white;
 }
 .jumbotron h2 {
-  color: #CEC8FF;
+  color: #222031;
 }
 
 .navbar-dark {
-  background-color: #901CAD;
+  background-color: #11cd37;
+  color: "#fff"
 }
 .page-enter {
   opacity: 0;
@@ -70,4 +72,7 @@ h2 {
   opacity: 1;
   transform: translateX(0%);
   transition: 300ms ease-out;
+}
+Link{
+  color: green;
 }
