@@ -5,12 +5,16 @@ import { baseUrl } from '../shared/baseUrl';
 import { FadeTransform } from 'react-animation-components';
 
 function RenderCard({ item, isLoading, errMess }) {
+    console.log(item)
     if (isLoading) {
         return <Loading />;
     }
     if (errMess) {
         return <h4>{errMess}</h4>;
     }
+
+    if(!item) return null
+
     return (
         <FadeTransform
             in

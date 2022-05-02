@@ -58,9 +58,9 @@ class Main extends Component {
             );
         }
 
-        const CampsiteWithId = ({match}) => {
+        const CampsiteWithId = ({ match }) => {
             return (
-                <CampsiteInfo 
+                <CampsiteInfo
                     campsite={this.props.campsites.campsites.filter(campsite => campsite.id === +match.params.campsiteId)[0]}
                     isLoading={this.props.campsites.isLoading}
                     errMess={this.props.campsites.errMess}
@@ -71,23 +71,25 @@ class Main extends Component {
             );
         };
 
+        console.log({ d: this.props.promotions})
+
         return (
             <div>
-               <Header />
+                <Header />
                 <TransitionGroup>
                     <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
                         <Switch>
                             <Route path='/home' component={HomePage} />
                             <Route exact path='/directory' render={() => <Directory campsites={this.props.campsites} />} />
                             <Route path='/directory/:campsiteId' component={CampsiteWithId} />
-                           <Route exact path='/contactus' render={() => <Contact postFeedback={this.props.postFeedback} /> } />
-                            <Route exact path='/aboutus' render={() => <About partners={this.props.partners} /> } />
+                            <Route exact path='/contactus' render={() => <Contact postFeedback={this.props.postFeedback} />} />
+                            <Route exact path='/aboutus' render={() => <About partners={this.props.partners} />} />
                             <Redirect to='/home' />
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
                 <Footer />
-               
+
             </div>
         );
     };
